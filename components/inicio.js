@@ -14,19 +14,24 @@ export default function inicio(props) {
                 <View>
                     <Image
                         style={styles.iconoetologia}
-                        source={require('../assets/Iconoaplicacionserenapp.png')} />
+                        source={require('../assets/Iconocabezotesinmesadetrabajo.png')} />
+                </View>
+                <View style={styles.Descripcion}>
+                <Text style={styles.texto}>
+                    Serenapp
+                </Text>
                 </View>
                 <View style={styles.Descripcion}>
                     <View style={styles.Boton}>
                         <Button
                             title="INICIAR SESIÓN"
-                            titleStyle={{ color: "white", fontSize: 12 }}
-                            buttonStyle={{ backgroundColor: '#047D82', borderRadius: 25, margin: 'auto', color: "white", width: 120 }}>
+                            titleStyle={{ color: "white", fontSize: 20 }}
+                            buttonStyle={{ backgroundColor: '#2B8850', borderRadius: 25, margin: 'auto', color: "white", width: 200 }}>
                         </Button>
                         <Button
                             title="REGISTRARSE"
-                            titleStyle={{ color: "white", fontSize: 12 }}
-                            buttonStyle={{ backgroundColor: '#047D82', borderRadius: 25, margin: 'auto', color: "white", width: 100 }}>
+                            titleStyle={{ color: "white", fontSize: 20 }}
+                            buttonStyle={{ backgroundColor: '#2B8850', borderRadius: 25, margin: 'auto', color: "white", width: 200 }}>
                         </Button>
                     </View>
                 </View>
@@ -53,5 +58,25 @@ const styles = StyleSheet.create({
         marginLeft: 'auto',
         marginRight: 'auto',
         marginTop: '-27%',
+    },
+    texto: {
+        width: '90%',
+        color: '#2B8850',
+        fontSize: 100,
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignContent: 'center',
+        marginLeft: 'auto',
+        marginTop: 'auto',
+    },
+    Descripcion: {
+        paddingTop: 5,
+        width: '100%',
+        height: 175,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        textAlign: 'justify',
+        marginLeft: '5%',
     },
 });
